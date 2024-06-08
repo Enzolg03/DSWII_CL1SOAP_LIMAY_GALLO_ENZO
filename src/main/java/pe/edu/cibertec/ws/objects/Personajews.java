@@ -2,17 +2,15 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.08 a las 10:08:51 AM PET 
+// Generado el: 2024.06.08 a las 11:31:29 AM PET 
 //
 
 
 package pe.edu.cibertec.ws.objects;
 
-import javax.xml.datatype.XMLGregorianCalendar;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlSchemaType;
 import jakarta.xml.bind.annotation.XmlType;
 
 
@@ -29,7 +27,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         &lt;element name="idpersonaje" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="nompersonaje" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="apepersonaje" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="fechnacpersonaje" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *         &lt;element name="fechnacpersonaje" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -53,8 +51,7 @@ public class Personajews {
     @XmlElement(required = true)
     protected String apepersonaje;
     @XmlElement(required = true)
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar fechnacpersonaje;
+    protected String fechnacpersonaje;
 
     /**
      * Obtiene el valor de la propiedad idpersonaje.
@@ -125,10 +122,10 @@ public class Personajews {
      * 
      * @return
      *     possible object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link String }
      *     
      */
-    public XMLGregorianCalendar getFechnacpersonaje() {
+    public String getFechnacpersonaje() {
         return fechnacpersonaje;
     }
 
@@ -137,10 +134,10 @@ public class Personajews {
      * 
      * @param value
      *     allowed object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link String }
      *     
      */
-    public void setFechnacpersonaje(XMLGregorianCalendar value) {
+    public void setFechnacpersonaje(String value) {
         this.fechnacpersonaje = value;
     }
 
